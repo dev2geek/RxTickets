@@ -1,0 +1,25 @@
+{
+  "name": "rxtickets",
+  "version": "1.0.0",
+  "description": "Tickets for boarding ReactiveX/rx programming",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "./node_modules/.bin/lerna bootstrap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev2geek/RxTickets.git"
+  },
+  "keywords": [
+    "rx"
+  ],
+  "author": "dev2geek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dev2geek/RxTickets/issues"
+  },
+  "homepage": "https://github.com/dev2geek/RxTickets#readme",
+  "devDependencies": {
+    "lerna": "^2.10.1"
+  }
+}
