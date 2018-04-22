@@ -12,11 +12,11 @@ const src$ = Observable.range(2, 6);
 const sum$ = src$.reduce((acc, x) => {
   return acc + x;
 });
-const even$ = src$.filter( val => {
+const even$ = src$.filter(val => {
   return val % 2 === 0;
 });
 const double$ = src$.map(name => {
-  return name*2;
+  return name * 2;
 });
 
 console.log('~ reduce');

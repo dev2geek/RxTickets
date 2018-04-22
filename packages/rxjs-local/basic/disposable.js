@@ -1,14 +1,14 @@
 'use strict';
 
-const { Observable } = require('rxjs');
+const {Observable} = require('rxjs');
 
 const counter$ = Observable.interval(1000);
 
-const subscription1 = counter$.subscribe( i => {
+const subscription1 = counter$.subscribe(i => {
   console.log('Subscription 1:', i);
 });
 
-const subscription2 = counter$.subscribe( i => {
+const subscription2 = counter$.subscribe(i => {
   console.log('Subscription 2:', i);
 });
 

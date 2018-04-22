@@ -1,6 +1,6 @@
 'use strict';
 
-const { Observable } = require('rxjs');
+const {Observable} = require('rxjs');
 
 function getJSON(arr) {
   return Observable.from(arr).map(JSON.parse);

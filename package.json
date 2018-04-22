@@ -4,7 +4,8 @@
   "description": "Tickets for boarding ReactiveX/rx programming",
   "main": "index.js",
   "scripts": {
-    "bootstrap": "./node_modules/.bin/lerna bootstrap"
+    "bootstrap": "./node_modules/.bin/lerna bootstrap",
+    "clean": "./node_modules/.bin/lerna clean --yes"
   },
   "repository": {
     "type": "git",
