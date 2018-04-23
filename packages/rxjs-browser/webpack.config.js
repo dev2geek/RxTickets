@@ -5,7 +5,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    button: './src/button.js'
   },
   mode: 'development',
   output: {
@@ -13,9 +14,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
-    new HtmlWebpackPlugin(),
-    new FaviconsWebpackPlugin('./src/logo.png'),
-    new CleanWebpackPlugin(['dist'])
+    // new HtmlWebpackPlugin(),
+    // new FaviconsWebpackPlugin('./src/logo.png'),
+    // new CleanWebpackPlugin(['dist'])
   ],
   devServer: {
     contentBase: './dist'
@@ -27,6 +28,17 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader'
+        ]
+      },
+      {
+        test: /\.(html)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          }
         ]
       }
     ]
